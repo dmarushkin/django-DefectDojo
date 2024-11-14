@@ -9,6 +9,9 @@ usage() {
   echo
   echo "This script helps with running unit tests."
   echo
+  echo "Before running script be sure to fire up right env for unit tests:"
+  echo "./docker/setEnv.sh unit_tests; ./dc-build.sh; ./dc-up-d.sh"
+  echo
   echo "Options:"
   echo "  --test-case -t {YOUR_FULLY_QUALIFIED_TEST_CASE}"
   echo "  --help -h - prints this dialogue."

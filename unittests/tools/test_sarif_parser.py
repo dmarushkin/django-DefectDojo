@@ -315,6 +315,7 @@ add_core(ptr, offset, val);
             parser = SarifParser()
             findings = parser.get_findings(testfile, Test())
             self.assertEqual(9, len(findings))
+            
             for finding in findings:
                 self.common_checks(finding)
 
